@@ -5,7 +5,6 @@ window.onload = () => {
 
 window.onscroll = () => {
   activeNav();
-  stickyBar();
 };
 
 
@@ -46,13 +45,32 @@ function activeNav() {
   if (scrolly >abTop - 300){
     document.getElementsByTagName('nav')[0].style.backgroundColor='var(--Grey)';
     document.getElementById('Logo').style.width='110px'
+    document.getElementsByTagName('nav')[0].style.boxShadow='var(--shadow-light)';
+
   }
   else {
     document.getElementsByTagName('nav')[0].style.backgroundColor='';
     document.getElementById('Logo').style.width='170px';
+    document.getElementsByTagName('nav')[0].style.boxShadow='none';
+
   }
 }
 
+
+
+
+
+
+
+
+//auto fill booking date as today
+var date = new Date();
+var currentDate = date.toISOString().slice(0,10);
+var currentTime = '12:00';
+document.getElementById('b-date').min = currentDate;
+document.getElementById('b-date').value = currentDate;
+
+document.getElementById('b-time').value = currentTime;
 
 
 
@@ -88,18 +106,4 @@ function showSlides(n) {
 
 
 
-//catgory band from menu page
-var cat = document.getElementById('categories');
-const sticky = cat.offsetTop - 70;
-
-function stickyBar() {
-  if (window.scrollY >= sticky) {
-    cat.style.position = 'fixed';
-    cat.style.top = '70px';
-  }
-  else {
-    cat.style.position = 'absolute';
-    cat.style.top = '240px';
-  }
-}
 

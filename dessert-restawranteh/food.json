@@ -1,0 +1,77 @@
+{
+  "category": [
+    {
+      "catName": "Cakes",
+      "catId": "cake",
+      "catItems": [
+        {
+          "itemName": "Lemon Ginger",
+          "itemPrice": "20$",
+          "desc": "lemon , ginger, cake and a whole lot of meth.",
+          "pic": "Food/cake/lemon-ginger.jpg"
+        },
+        {
+          "itemName": "Lime cake",
+          "itemPrice": "30$",
+          "desc": "they really made off brand lemon for no reason",
+          "pic": "Food/cake/lime.jpg"
+
+        },
+        {
+          "itemName": "Cherry Vanilla",
+          "itemPrice": "30$",
+          "desc": "this ones doesnt look like cherry but it fits the color scheme.",
+          "pic": "Food/cake/cherry.jpg"
+
+        },
+       
+        {
+          "itemName": "Chocolate Raspberry",
+          "itemPrice": "25$",
+          "desc": "rasberies arRe no good added to chocoltae or otherwide",
+          "pic": "Food/cake/chocolate-raspberry.jpg"
+
+        }
+      ]
+    },
+    {
+      "catName": "Pies",
+      "catId": "pie",
+      "catItems": [
+        {
+          "itemName": "apricot pie",
+          "itemPrice": "80$",
+          "desc": " pie pie g,gglg lglgly fhffffff", 
+          "pic": "Food/pie/apricot.jpg"
+        },
+      
+        {
+          "itemName": "Blueberry tart",
+          "itemPrice": "40$",
+          "desc": "I shall descend to the mortal realm and unleash utter destruction. ",
+          "pic": "Food/pie/blueberry.jpg"
+
+        },
+        {
+          "itemName": "Pecan Pie",
+          "itemPrice": "40$",
+          "desc": "I dont know what pecan is, but i believe 9/11 was an inside job.",
+          "pic": "Food/pie/pecan.jpg"
+
+        }
+        ,
+        {
+          "itemName": "Lemon Tart",
+          "itemPrice": "40$",
+          "desc": "lemon tart yummy hehe. me fr",
+          "pic": "Food/pie/lemon.png"
+
+        }
+      
+      
+      ]
+    }
+
+
+  ]
+}

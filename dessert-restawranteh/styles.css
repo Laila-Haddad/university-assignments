@@ -5,9 +5,12 @@
   --Light-yellow: #c1a566;
   --Green: #619471;
   --Grey: #151719;
+  --cat-grey: #181A1C;
   --light-grey: #24252A;
   --White: #D9D9D9;
   --shadow: 3px 3px 10px #000000;
+  --shadow-light: 3px 3px 10px #00000027;
+
 
 }
 
@@ -21,7 +24,7 @@ html {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  
+
 }
 
 body {
@@ -110,6 +113,7 @@ span {
   display: inline-block;
   margin: 20px 10px;
   width: 12em;
+  font-family: century gothic;
 }
 
 .non-desktop {
@@ -194,6 +198,7 @@ span {
   border-color: var(--Yellow);
 }
 
+
 .button.book {
   background-color: var(--Pink);
   border-color: var(--Pink);
@@ -216,10 +221,10 @@ span {
 }
 
 .container .content {
-  padding: 3em 10% 0;
+  padding: 3em 10% ;
   display: grid;
   height: fit-content;
-  row-gap: 7vw;
+  row-gap: 8vw;
   /* scroll-snap-align: start; */
   scroll-margin: 2rem;
 
@@ -271,7 +276,7 @@ span {
 }
 
 
-#About .tiles .tile.middle {
+#About .tile:nth-child(2) {
   margin: 0 2em;
 
 }
@@ -294,7 +299,6 @@ span {
   text-align: center;
   border-top: 5px double;
   border-bottom: 5px double;
-
 }
 
 .card {
@@ -302,7 +306,6 @@ span {
   backdrop-filter: blur(2px) brightness(50%);
   width: 100%;
   height: 100%;
-
   padding: 8px;
   position: absolute;
   transition: ease 0.3s;
@@ -313,7 +316,6 @@ span {
 
 .card:hover {
   opacity: 1;
-
 }
 
 
@@ -323,7 +325,7 @@ span {
 #Review {
   background-image: url(Logos/pattern.png);
   background-size: 60%;
-  margin: 0 -12.5%;
+  margin: 0 -12.5% -3rem;
   padding: 2.5em 12.5%;
   display: flex;
   flex-direction: column;
@@ -332,7 +334,9 @@ span {
   scroll-margin: 5rem;
 }
 
-#Book input {
+#Book input[type="number"],
+#Book input[type="date"],
+#Book input[type="time"] {
   width: 12em;
   border: 1.5px solid var(--Pink);
   padding: 9px 7px;
@@ -343,8 +347,8 @@ span {
   text-transform: uppercase;
   font-weight: 800;
   margin: 1em;
-
 }
+
 
 #Book h3 {
   font-size: 3em;
@@ -481,12 +485,13 @@ span {
   gap: 1em;
 }
 
-#Review .prev , .next{
+#Review .prev,
+.next {
   position: absolute;
   top: 50%;
   cursor: pointer;
-  min-height:35px;
-  min-width:35px;
+  min-height: 35px;
+  min-width: 35px;
   background-size: 100%;
 
 }
@@ -513,8 +518,10 @@ span {
   cursor: pointer;
   transition: 0.2s ease;
 }
-#Review .dot-active, #Review .dot:hover {
-  background-color:var(--Light-yellow);
+
+#Review .dot-active,
+#Review .dot:hover {
+  background-color: var(--Light-yellow);
 }
 
 
@@ -524,9 +531,19 @@ span {
 }
 
 @keyframes fade-left {
-  0% {transform: translateX(20px);  opacity: 0;}
-  100% {transform: translateX(0);opacity: 1;}
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
+
+
+
 
 
 
@@ -538,20 +555,23 @@ span {
 
 }
 
+#menu-container .content {
+  row-gap: 5vw;
+}
+
 #menu-container #categories {
-  width: 70%;
+  width: 80%;
   display: flex;
   justify-content: space-evenly;
   position: absolute;
   top: 240px;
-  left: 15vw;
-  box-shadow: #0000002f 0px 3px 10px;
+  left: 10vw;
+  box-shadow: var(--shadow-light);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-
   background-color: #181A1C;
   padding: 1%;
-  z-index: 20;
+  z-index: 40;
 }
 
 
@@ -590,9 +610,8 @@ span {
 }
 
 #menu-container .content>div {
-  grid-template: 60px repeat(3, 1fr)/ 50% 50%;
+  grid-template: 60px repeat(2, 1fr)/ 50% 50%;
   display: grid;
-  row-gap: 2em;
   scroll-margin: 11rem;
   /* scroll-snap-align: start; */
 
@@ -600,39 +619,47 @@ span {
 
 
 #menu-container .item {
-  display: flex;
-  gap: 1em;
-  align-items: center;
-  padding: 2% 5%;
   width: 100%;
-}
-
-
-#menu-container .desc>div {
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: center;
+  padding: 5% ;
+  align-content: center;
 
+
+}
 
 #menu-container .item img {
-  height: 60px;
-  width: 60px;
+  width: 100px;
 }
 
-#menu-container .desc hr {
-  width: 10em;
+#menu-container .desc {
+  justify-content: space-between;
+  align-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  padding: 3%;
+}
+
+#menu-container .desc .food-line {
+  width: 20% ;
   height: 7px;
-  border: solid 1.4px;
+  position: relative;
+  top:5px;
+  border: solid 1.4px var(--White);
   border-left: none;
   border-right: none;
-  margin: 3px;
-  position: relative;
-  top: 4px;
 }
 
+/* #menu-container .desc .food-price {
+}
+
+#menu-container .desc .food-name {
+} */
 
 #menu-container p {
-  margin: 5px 0;
+  margin: 0;
+  flex-basis: 100%;
 }
 
 
@@ -650,7 +677,6 @@ nav {
   top: 0px;
   width: 100%;
   z-index: 30;
-  /* background: var(--Grey); */
   transition: background-color 0.3s ease;
 }
 
@@ -686,11 +712,11 @@ nav .logo {
   display: inline-block;
   width: 180px;
   height: 100%;
-  background-image: url(../Logos/LOGO.png);
+  background-image: url(Logos/LOGO.png);
   text-indent: -10000px;
   background-size: 100%;
   background-repeat: no-repeat;
-  transition:  0.1s ease-in;
+  transition: 0.1s ease-in;
 
 }
 
@@ -749,7 +775,7 @@ nav .contact.active {
 
 
 /* footer */
-footer#home-footer {
+/* footer#home-footer {
   background-color: #619471;
 }
 
@@ -759,7 +785,7 @@ footer#menu-footer {
 
 footer#order-footer {
   background-color: #DBBE7E;
-}
+} */
 
 
 
@@ -769,7 +795,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-
+  background-color: #619471;
 }
 
 
@@ -818,16 +844,7 @@ footer hr {
   background-color: #000000;
 }
 
-footer .twitter {
-  background-image: url(../Logos/Twitter2.png);
-  background-size: 15px;
 
-}
-
-footer .facebook {
-  background-image: url(../Logos/Facebook2.png);
-  background-size: 15px;
-}
 
 
 
