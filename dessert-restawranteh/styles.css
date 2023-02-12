@@ -180,7 +180,7 @@ span {
 /* home page code */
 
 #home-container .landing {
-  background-image: url(Cover/cover.png);
+  background-image: url(Cover/cover.webp);
 
 }
 
@@ -551,7 +551,7 @@ span {
 /* menu page code */
 
 #menu-container .landing {
-  background-image: url(Cover/cover2.png);
+  background-image: url(Cover/cover2.webp);
 
 }
 
