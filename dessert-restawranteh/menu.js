@@ -86,7 +86,7 @@ function activeNav() {
   else {
     document.getElementsByTagName('nav')[0].style.backgroundColor = '';
     document.getElementById('Logo').style.width = '170px';
-    document.getElementsByClassName('landing')[0].style.backgroundImage = 'url(Cover/cover2.png)';
+    document.getElementsByClassName('landing')[0].style.backgroundImage = 'url(Cover/cover2.webp)';
     document.getElementsByTagName('nav')[0].style.boxShadow = 'none';
     document.getElementsByClassName('landing')[0].style.boxShadow = '1px 6px 15px #00000022';
 
