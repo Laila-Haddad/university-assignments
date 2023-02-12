@@ -722,11 +722,11 @@ nav .logo {
 
 
 nav .twitter {
-  background-image: url(../Logos/Twitter.png);
+  background-image: url(Logos/Twitter.png);
 }
 
 nav .facebook {
-  background-image: url(../Logos/Facebook.png);
+  background-image: url(Logos/Facebook.png);
   margin-left: 5px;
 }
 
@@ -800,7 +800,7 @@ footer {
 
 
 footer .logo2 {
-  background-image: url(../Logos/LOGO2.png);
+  background-image: url(Logos/LOGO2.png);
   background-repeat: no-repeat;
   width: 150px;
   height: 65px;
