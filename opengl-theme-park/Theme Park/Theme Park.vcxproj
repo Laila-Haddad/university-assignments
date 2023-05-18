@@ -119,12 +119,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\laila\source\repos\CGL\freeglut\include;C:\Users\laila\source\repos\Theme Park\Theme Park\Rides.h</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;Rides.h</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\laila\source\repos\CGL\freeglut\lib\x64</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>lib\x64</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

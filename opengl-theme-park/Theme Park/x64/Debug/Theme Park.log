@@ -1,94 +1,94 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(500,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
   Ferris Wheel.cpp
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(35,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(37,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(128,22): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(163,12): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(214,55): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(214,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(225,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(225,56): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(225,48): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(300,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(364,20): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(389,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(389,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(436,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(436,18): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(436,15): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(436,48): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(436,41): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(436,34): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(466,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(466,12): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(488,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(488,12): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(510,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(511,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(511,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(567,12): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(599,55): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(599,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(621,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(622,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(622,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(712,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(722,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(739,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(739,58): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(739,50): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(805,12): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(843,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(850,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(857,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(864,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(871,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(878,34): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(879,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(885,33): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(886,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(894,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(902,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(910,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(920,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(928,22): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(936,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(978,21): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(996,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(997,22): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1003,22): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1010,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1017,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1024,22): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1032,22): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1040,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1047,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1053,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1060,20): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1065,20): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1070,20): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1079,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1158,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1509,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1552,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1554,21): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1555,21): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1559,12): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1580,12): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1636,32): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1638,33): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1666,19): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1666,19): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1666,29): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1666,29): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1666,37): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1666,37): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1676,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1679,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1713,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1714,17): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1769,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1844,27): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1859,19): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\laila\source\repos\Theme Park\Theme Park\Ferris Wheel.cpp(1874,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-  Theme Park.vcxproj -> C:\Users\laila\source\repos\Theme Park\Theme Park\Theme Park.exe
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(35,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(37,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(128,22): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(163,12): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(214,55): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(214,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(225,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(225,56): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(225,48): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(300,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(364,20): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(389,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(389,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(436,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(436,18): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(436,15): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(436,48): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(436,41): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(436,34): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(466,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(466,12): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(488,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(488,12): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(510,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(511,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(511,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(567,12): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(599,55): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(599,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(621,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(622,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(622,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(712,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(722,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(739,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(739,58): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(739,50): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(805,12): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(843,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(850,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(857,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(864,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(871,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(878,34): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(879,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(885,33): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(886,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(894,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(902,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(910,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(920,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(928,22): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(936,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(978,21): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(996,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(997,22): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1003,22): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1010,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1017,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1024,22): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1032,22): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1040,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1047,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1053,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1060,20): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1065,20): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1070,20): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1079,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1158,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1509,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1552,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1554,21): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1555,21): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1559,12): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1580,12): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1636,32): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1638,33): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1666,19): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1666,19): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1666,29): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1666,29): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1666,37): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1666,37): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1676,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1679,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1713,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1714,17): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1769,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1844,27): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1859,19): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Ferris Wheel.cpp(1874,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+  Theme Park.vcxproj -> C:\Users\laila\Desktop\opengl-theme-park\Theme Park\Theme Park.exe
