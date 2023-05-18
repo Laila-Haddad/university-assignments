@@ -44,13 +44,15 @@ function activeNav() {
 
   if (scrolly >abTop - 300){
     document.getElementsByTagName('nav')[0].style.backgroundColor='var(--Grey)';
-    document.getElementById('Logo').style.width='110px'
+    document.getElementById('Logo').style.backgroundSize='60%';
+
     document.getElementsByTagName('nav')[0].style.boxShadow='var(--shadow-light)';
 
   }
   else {
     document.getElementsByTagName('nav')[0].style.backgroundColor='';
-    document.getElementById('Logo').style.width='170px';
+    document.getElementById('Logo').style.backgroundSize='100%';
+
     document.getElementsByTagName('nav')[0].style.boxShadow='none';
 
   }

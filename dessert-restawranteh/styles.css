@@ -261,7 +261,7 @@ span {
   color: var(--Pink);
 }
 
-.show {
+#About .show {
   border: 10px double var(--light-grey);
   width: 100%;
   align-self: center;
@@ -867,20 +867,9 @@ footer hr {
     display: block;
   }
 
-  #home-container {
-    grid-template-columns: var(--about-grid1) var(--about-grid);
-  }
-
   #home-container .content {
     padding-left: 15px;
     padding-right: 15px;
-
-
-  }
-
-  #home-container .nav-background {
-    width: var(--about-grid);
-    left: var(--about-grid1);
   }
 
   #home-container p,
@@ -907,14 +896,6 @@ footer hr {
 
 
 
-  #about-container {
-    grid-template-columns: var(--about-grid1) var(--about-grid);
-  }
-
-  #about-container .nav-background {
-    width: var(--about-grid);
-    left: var(--about-grid1);
-  }
 
   #about-container .background {
     background-position: bottom right;
@@ -922,14 +903,7 @@ footer hr {
 
 
 
-  #menu-container {
-    grid-template-columns: var(--about-grid1) var(--about-grid);
-  }
 
-  #menu-container .nav-background {
-    width: var(--about-grid);
-    left: var(--about-grid1);
-  }
 
   #menu-container .background {
     background-position: bottom;
@@ -941,10 +915,7 @@ footer hr {
 
 
 
-  nav .logo {
-    background-size: 170px;
-    width: 150px;
-  }
+
 
   nav ul {
     margin-right: 30px;
@@ -964,10 +935,6 @@ footer hr {
   footer .link {
     font-size: 2.1vw;
   }
-
-
-
-
 }
 
 
@@ -985,12 +952,7 @@ footer hr {
     display: none !important;
   }
 
-  .container {
-    width: 100%;
-    margin-top: 170px;
-    display: flex;
-
-  }
+ 
 
   p,
   h4 {
