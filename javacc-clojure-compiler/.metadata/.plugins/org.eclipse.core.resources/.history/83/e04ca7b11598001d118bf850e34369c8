@@ -1,0 +1,36 @@
+package nodes;
+
+public class conditionNode extends valueNode{
+
+	public conditionNode() { }
+
+	@Override
+	public Object execute() {
+		
+//		Why .toString()???????? I added it to shut the error up, doesn't make sense
+		String op = children.get(0).execute().toString();
+		Object v1 = typeof children.get(1).execute();
+		Object v2 = children.get(2).execute();
+		
+		if(op.equals("=")) 
+			return v1 == v2;
+		if(op.equals("not=")) 
+			return v1 != v2;
+		else if(op.equals(">")) {
+			int x1, x2;
+			boolean y1, y2;
+			String z1,z2;
+			if()
+			return v1 > children.get(1).execute();
+			return v1.compareTo(v2);
+		}
+		else if(op.equals("<")) 
+			return v1 < v2;
+		else if(op.equals(">=")) 
+			return v1 >= v2;
+		else if(op.equals("<=")) 
+			return v1 <= v2;
+		else
+			return null;
+	}
+}

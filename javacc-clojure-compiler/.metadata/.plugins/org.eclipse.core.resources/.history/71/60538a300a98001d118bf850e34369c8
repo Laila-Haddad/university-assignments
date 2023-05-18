@@ -1,0 +1,16 @@
+package nodes;
+
+public class stringNode extends treeNode
+{
+	private String val;
+
+	public stringNode (String v) 
+	{
+		this.val = v;
+	}
+
+	public Object execute()
+	{
+	return this.val ;
+	}
+}

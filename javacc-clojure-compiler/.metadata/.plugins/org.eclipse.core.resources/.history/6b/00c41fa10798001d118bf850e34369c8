@@ -1,0 +1,20 @@
+package nodes;
+
+public class intNode extends valueNode
+{
+	private String val;
+	
+	public intNode(String v)
+	{
+		this.val = v;
+	}
+	
+//	public void setVal(String v) {this.val = v;}
+	
+	public Object execute()
+	{
+	int res = Integer.parseInt(this.val);
+//	System.out.println("hi from intNode" + res);
+	return res ;
+	}
+}

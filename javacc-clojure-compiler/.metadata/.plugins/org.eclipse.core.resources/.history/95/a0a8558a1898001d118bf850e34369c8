@@ -1,0 +1,22 @@
+package nodes;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class assignNode extends treeNode{
+	
+	public static HashMap<String, Object> variables = new HashMap<String, Object>();
+
+	@Override
+	public Object execute() {
+
+		String varName = (String)children.get(0).execute();
+		int varvalue = (int)children.get(1).execute();
+
+		variables.put(varName,varvalue);
+		
+		System.out.println("hi from assign node variables are " + variables);
+		variables.put(varName,varvalue);
+		return null;
+	}
+}

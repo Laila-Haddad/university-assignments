@@ -1,0 +1,17 @@
+package nodes;
+
+public class varNode extends valueNode
+{
+	private String value;
+
+	public varNode (String v) 
+	{
+		this.value = v;
+	}
+
+	public Object execute()
+	{
+		System.out.println("hi from varNode" + this.val);
+		return this.val ;
+	}
+}

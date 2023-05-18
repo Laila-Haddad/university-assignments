@@ -1,0 +1,18 @@
+package nodes;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class assignNode extends treeNode{
+
+	public assignNode() {}
+	@Override
+	public Object execute() {
+
+		String varName = children.get(0).execute().toString();
+		Object varvalue = children.get(1).execute();
+
+		varNode.variables.put(varName,varvalue);
+		return null;
+	}
+}

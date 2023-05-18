@@ -1,0 +1,24 @@
+package nodes;
+
+import java.util.HashMap;
+
+public class varNode extends valueNode
+{
+	public static HashMap<String, Object> variables = new HashMap<String, Object>();
+	private String value;
+
+	public varNode (String v) 
+	{
+		this.value = v;
+	}
+
+	public Object execute()
+	{
+		if (!variables.containsKey(this.value))
+		{
+			System.out.println("undefined variable");
+			return null;
+		}
+		return variables.get(this.value);
+	}
+}

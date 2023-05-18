@@ -1,0 +1,18 @@
+package nodes;
+
+public class stringNode extends valueNode
+{
+	private String value;
+
+	public stringNode (String v) 
+	{
+//		This fancy method to remove the initial double quotation marks
+		if (v.charAt(0) == '"')
+			this.value = v.substring( 1, v.length() - 1 );
+	}
+
+	public Object execute()
+	{
+		return this.value;
+	}
+}

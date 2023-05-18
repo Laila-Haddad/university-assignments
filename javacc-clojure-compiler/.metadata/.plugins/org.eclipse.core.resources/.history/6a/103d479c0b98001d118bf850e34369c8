@@ -1,0 +1,22 @@
+package nodes;
+
+public class varNode extends treeNode
+{
+	private String value;
+
+	public varNode (String v) 
+	{
+		this.val = v;
+	}
+
+	public void setVal(String v) 
+	{
+		this.val = v;
+	}
+
+	public Object execute()
+	{
+		System.out.println("hi from varNode" + this.val);
+		return this.val ;
+	}
+}

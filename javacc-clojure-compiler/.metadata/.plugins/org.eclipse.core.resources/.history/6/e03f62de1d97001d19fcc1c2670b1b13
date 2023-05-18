@@ -1,0 +1,21 @@
+package nodes;
+
+public class miniSwitchNode extends treeNode{
+
+	private varNode value;
+
+	public miniSwitchNode (String v) 
+	{
+		this.value = v;
+	}
+
+	public Object execute()
+	{
+		if (this.value == children[0].execute())
+		{
+			children[1].execute();
+			return true;
+		}
+		return false;	
+	}
+}

@@ -1,0 +1,12 @@
+package nodes;
+
+public class printNode extends treeNode{
+	
+	public printNode() {} 
+	
+	public Object execute()
+	{
+		System.out.println(children.get(0).execute());
+		return null;
+	}
+}

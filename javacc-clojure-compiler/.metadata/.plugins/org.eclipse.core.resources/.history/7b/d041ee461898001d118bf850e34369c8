@@ -1,0 +1,41 @@
+package nodes;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class assignNode extends treeNode{
+	
+	public static HashMap<String, Integer> variables = new HashMap<String, Integer>();
+
+	@Override
+	public Object execute() {
+
+		String varName = (String)children.get(0).execute();
+		int varvalue = (int)children.get(1).execute();
+
+		variables.put(varName,varvalue);
+		
+		System.out.println("hi from assign node variables are " + variables);
+		return null;
+		
+	//this is for read-line, wont run because grammar needs stringNode instead of const oh and also hash map should be object or whatever but it runs in the right conditions i promise 
+
+//		if(children.get(1).execute().equals("read-line")) {
+//			Scanner scan = new Scanner(System.in);
+//			String e = scan.nextLine();//casting function here
+//			variables.put(varName,Integer.parseInt(e));
+//
+//			System.out.println("in scanner " + variables);
+//		}
+//		else if (varvalue.equals("false") || varvalue.equals("true")) {
+//			boolean e = (boolean)children.get(1).execute();
+//			variables.put(varName,e);
+//			System.out.println("var is bool " + variables);
+//		}
+//		else {
+//			variables.put(varName,varvalue);
+//			System.out.println("hiiiiii from ass node variables is"+variables);
+//			return null;
+//		}
+	}
+}

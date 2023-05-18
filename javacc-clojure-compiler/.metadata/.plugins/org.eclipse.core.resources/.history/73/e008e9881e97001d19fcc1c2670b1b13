@@ -1,0 +1,35 @@
+package nodes;
+
+public class conditionNode extends treeNode{
+
+	private String  op;
+
+	public conditionNode(String op) { this.op=op;}
+
+	@Override
+	public Object execute() {
+		System.out.println("hi from conditionNode");
+		String varName = (String)children.get(0).execute();
+
+		if (!assignNode.variables.containsKey(varName))
+		{
+			System.out.println("undefiend variable");
+//			return null;
+		}
+
+		int v1=(int)assignNode.variables.get(varName);
+		int v2=(int)children.get(1).execute();
+		if(op.equals("=")) 
+			return v1 == v2;
+		if(op.equals("not=")) 
+			return v1 != v2;
+		else if(op.equals(">")) 
+			return v1 > v2;
+		else if(op.equals("<")) 
+			return v1 < v2;
+		else if(op.equals(">=")) 
+			return v1 >= v2;
+		else if(op.equals("<=")) 
+			return v1 <= v2;
+	}
+}

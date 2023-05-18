@@ -1,0 +1,25 @@
+package nodes;
+
+public class repeatNode extends treeNode{
+	private int number;
+	private String string;
+	
+	public repeatNode() {}
+	
+	public repeatNode(String number, String string) {
+		int n=Integer.parseInt(number);
+		this.number=n;
+		this.string=string;
+	}
+	
+	@Override
+	public Object execute() {
+		int num = (int)children.get(0).execute();
+		
+		for(int i=0; i < num; i++) {
+		   System.out.println(children.get(1).execute().toString());
+		}
+    
+		return null;
+	}
+}

@@ -1,0 +1,62 @@
+package nodes;
+
+public class conditionNode extends valueNode {
+
+	public conditionNode() {
+	}
+
+	@Override
+	public Object execute() {
+		String op = children.get(0).execute().toString();
+		Object v1 = children.get(1).execute();
+		Object v2 = children.get(2).execute();
+
+		if (v1 instanceof Integer && v2 instanceof Integer) {
+			int intVal1 = (int) v1;
+			int intVal2 = (int) v2;
+			switch (op) {
+			case "=":
+				return intVal1 == intVal2;
+			case "not=":
+				return intVal1 != intVal2;
+			case ">":
+				return intVal1 > intVal2;
+			case "<":
+				return intVal1 < intVal2;
+			case ">=":
+				return intVal1 >= intVal2;
+			case "<=":
+				return intVal1 <= intVal2;
+			default:
+				return null;
+			}
+		} else if (v1 instanceof String && v2 instanceof String) {
+			String strVal1 = (String) v1;
+			String strVal2 = (String) v2;
+			switch (op) {
+			case "=":
+				return strVal1.equals(strVal2);
+			case "not=":
+				return !strVal1.equals(strVal2);
+			default:
+				return null;
+			}
+		} else if (v1 instanceof Boolean && v2 instanceof Boolean) {
+			boolean boolVal1 = (boolean) v1;
+			boolean boolVal2 = (boolean) v2;
+			switch (op) {
+			case "=":
+				return boolVal1 == boolVal2;
+			case "not=":
+				return boolVal1 != boolVal2;
+			default:
+				return null;
+			}
+		} else if (!(v1 instanceof Integer || v1 instanceof String || v1 instanceof Boolean)
+				|| !(v2 instanceof Integer || v2 instanceof String || v2 instanceof Boolean)) {
+			System.out.println("Error: incompatible types for comparison.");
+		}
+		return null;
+	}
+
+}

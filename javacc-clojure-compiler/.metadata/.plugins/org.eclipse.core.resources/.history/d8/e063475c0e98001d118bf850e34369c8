@@ -1,0 +1,21 @@
+package nodes;
+
+public class varNode extends valueNode
+{
+	private String value;
+
+	public varNode (String v) 
+	{
+		this.value = v;
+	}
+
+	public Object execute()
+	{
+//		if (!assignNode.variables.containsKey(varName))
+//		{
+//			System.out.println("undefiend variable");
+//			return null;
+//		}
+		return this.value ;
+	}
+}

@@ -1,0 +1,50 @@
+package nodes;
+
+public class switchNode extends treeNode{
+
+	// private String var;
+
+	public void conditionNode(String v) {
+		// Do we really care about the value being switched on this level?
+		// I think it is useful to the miniSwitchNode because it is doing the actual checking
+		// the sole job of this node is to control the flow of the praogram and halt
+		// the switch statements after one is matched or execute the default.
+		// commented stuff are useful iff what I just said above is nonsense.
+		// this.var = v;
+	}
+
+	@Override
+	public Object execute() {
+		System.out.println("hi from switchNode");
+
+
+		if (!assignNode.variables.containsKey(this.var))
+		{
+			System.out.println("undefiend variable");
+			return null;
+		}
+
+		// this.val = (valueNode)assignNode.variables.get(this.var);
+
+		int defaultExists = 0;
+
+		// Figure out if there's a default case
+		if (children.size() % 2 != 0)
+			defaultExists = 1;
+
+		boolean matched = false;
+		for (int i = 0; i < children.size() - defaultExists; i++) {
+			matched = children.get(i).execute();
+			if (matched) {
+				System.out.println("switchNode matched and executed blockNode");
+				return null;
+			}
+		}
+		if (defaultExists == 1)
+		{
+			System.out.println("default case executed");
+			children[children.size() - 1].execute();
+			return null;
+		}
+	}
+}

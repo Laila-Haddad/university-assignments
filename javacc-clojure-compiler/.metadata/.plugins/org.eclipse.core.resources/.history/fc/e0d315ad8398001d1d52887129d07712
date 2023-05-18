@@ -1,0 +1,19 @@
+package nodes;
+
+public class printNode extends treeNode{
+	
+	public printNode() {} 
+	
+	public Object execute()
+	{
+		String text = "";
+		
+		if (children.size() > 1) {
+			
+		}
+			
+		text = (String)children.get(0).execute();
+		System.out.println(text);
+		return null;
+	}
+}

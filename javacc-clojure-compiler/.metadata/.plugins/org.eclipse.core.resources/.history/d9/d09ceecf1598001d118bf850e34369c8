@@ -1,0 +1,50 @@
+package nodes;
+
+public class conditionNode extends valueNode {
+
+	public conditionNode() {
+	}
+
+	@Override
+	public Object execute() {
+		String op = children.get(0).execute().toString();
+		Object v1 = children.get(1).execute();
+		Object v2 = children.get(2).execute();
+
+		if (v1 instanceof Integer && v2 instanceof Integer) {
+			int intVal1 = (int) v1;
+			int intVal2 = (int) v2;
+			if (op.equals("="))
+				return intVal1 == intVal2;
+			if (op.equals("not="))
+				return intVal1 != intVal2;
+			else if (op.equals(">"))
+				return intVal1 > intVal2;
+			else if (op.equals("<"))
+				return intVal1 < intVal2;
+			else if (op.equals(">="))
+				return intVal1 >= intVal2;
+			else if (op.equals("<="))
+				return intVal1 <= intVal2;
+		} else if (v1 instanceof String && v2 instanceof String) {
+			String strVal1 = (String) v1;
+			String strVal2 = (String) v2;
+			if (op.equals("="))
+				return strVal1.equals(strVal2);
+			if (op.equals("not="))
+				return !strVal1.equals(strVal2);
+			else if (op.equals(">"))
+				return strVal1.compareTo(strVal2) > 0;
+			else if (op.equals("<"))
+				return strVal1.compareTo(strVal2) < 0;
+			else if (op.equals(">="))
+				return strVal1.compareTo(strVal2) >= 0;
+			else if (op.equals("<="))
+				return strVal1.compareTo(strVal2) <= 0;
+		} else if (!(v1 instanceof Integer || v1 instanceof String)
+				|| !(v2 instanceof Integer || v2 instanceof String)) {
+			System.out.println("Error: incompatible types for comparison.");
+			return null;
+		}
+	}
+}

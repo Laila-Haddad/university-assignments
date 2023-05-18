@@ -1,0 +1,19 @@
+package nodes;
+
+public class valueNode extends treeNode
+{
+	private Object val;
+
+	public valueNode () {}
+	
+	public valueNode (String v) 
+	{
+		this.val = v;
+	}
+
+	public Object execute()
+	{
+		System.out.println("hi from valueNode" + this.val);
+		return this.val ;
+	}
+}

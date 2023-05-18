@@ -1,0 +1,24 @@
+package nodes;
+
+import java.util.Iterator;
+
+public class printNode extends treeNode{
+	
+	public printNode() {} 
+	
+	public Object execute()
+	{
+		String text = "";
+		
+		if (children.size() > 1) {
+			for (int i = 0; i < children.size(); i++) {
+				treeNode treeNode = (treeNode) iterator.next();
+				
+			}
+		}
+			
+		text = (String)children.get(0).execute();
+		System.out.println(text);
+		return null;
+	}
+}

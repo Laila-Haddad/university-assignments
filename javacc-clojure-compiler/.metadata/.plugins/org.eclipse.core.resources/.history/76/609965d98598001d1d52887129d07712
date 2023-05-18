@@ -1,0 +1,361 @@
+options
+{
+  LOOKAHEAD= 2;
+
+}
+
+PARSER_BEGIN(test)
+import nodes.*;
+import java.util.Scanner;
+
+public class test
+{
+  public static void main(String [] args)
+  {
+    try
+    {
+      test parser = new test(System.in);
+      treeNode n = parser.start();
+      n.execute();
+    }
+    catch (Exception e)
+    {
+      System.out.print(e.getMessage());
+    }
+  }
+}
+
+PARSER_END(test)
+
+SKIP :
+{
+  " "
+| 
+  "\t"
+| 
+  "\n"
+| 
+  "\r"
+}
+
+TOKEN :
+{
+  < CLOSE : ")" >
+| < OPEN : "(" >
+| < OPENSQ : "[" >
+| < CLOSESQ : "]" >
+| < QUOTE : "\"" >
+| < MATHOP :
+    (
+      "+"
+    | "-"
+    | "*"
+    | "/"
+    ) >
+| < LOGICOP :
+    (
+      "and"
+    | "or"
+    | "not"
+    ) >
+| < COMPAREOP :
+    (
+      ">"
+    | "<"
+    | ">="
+    | "<="
+    | "=="
+    | "not="
+    ) >
+}
+
+TOKEN : /*key words*/
+{
+  < #CHAR : [ "a"-"z", "A"-"Z" ] >
+| < #DIGIT : [ "0"-"9" ] >
+| < #SPECIAL : [ "_", "-", ":", ".", ",", "?" ] >
+| < DEF : "def" >
+| < DEFN : "defn" >
+| < IF : "if" >
+| < WHILE : "while" >
+| < ATOM : "atom" >
+| < PRINT : "println" >
+| < LOOP : "loop" >
+| < SWAP : "swap!" >
+| < WHEN : "when" >
+| < DO : "do" >
+| < RECUR : "recur" >
+| < CASE : "case" >
+| < READ : "read-line" >
+| < REPEAT : "repeat" >
+| < BOOL : ( "true" | "false" ) >
+| < VAR :
+    ("@")? ("_")? (< CHAR >)+
+    (
+      (< CHAR >)
+    | (< DIGIT >)
+    | "_"
+    | "-"
+    )* >
+| < INT : (< DIGIT >)+ >
+| < STR :
+    < QUOTE > < CHAR >
+    (
+      (< CHAR >)+
+    | < INT >
+    | " "
+    | < SPECIAL >
+    )*
+    < QUOTE > >
+| < COMMA : (",") >
+| < ENDPROGRAM : "##" >
+}
+
+treeNode start() :
+{
+  blockNode b = new blockNode();
+  treeNode i;
+}
+{
+  (
+    i = block()
+    {
+      b.addChild(i);
+    }
+  )+
+  < ENDPROGRAM >
+  {
+    return b;
+  }
+}
+
+blockNode block() :
+{
+  blockNode b = new blockNode();
+  treeNode i;
+}
+{
+  (
+    < OPEN >
+    (
+      i = ifSt()
+    | i = assign()
+    | i = modification()
+    | i = print()
+    | i = loop()
+    | i = repeat()
+    | i = cond()
+    | i = switchSt()
+    )
+    < CLOSE >
+    {
+      b.addChild(i);
+    }
+  )+
+  {
+    return b;
+  }
+}
+
+repeatNode repeat() :
+{	
+  Token t1, t2;
+  valueNode s1, s2;
+  repeatNode r = new repeatNode();
+}
+{
+  < REPEAT > t1 = < INT > t2 = < STR >
+  {
+    s1 = new intNode(t1.image);
+    s2 = new stringNode(t2.image);
+    r.addChild(s1);
+    r.addChild(s2);
+    return r;
+  }
+}
+
+loopNode loop() :
+{
+  loopNode loo = new loopNode();
+  assignNode ass;
+  conditionNode con;
+  blockNode b;
+  modNode c;
+}
+{
+  < LOOP > ass = assign() < OPEN > < WHEN > con = cond() b = block() < OPEN > < RECUR > "(" c = modification() ")" < CLOSE > < CLOSE >
+  {
+    loo.addChild(ass);
+    loo.addChild(con);
+    loo.addChild(b);
+    loo.addChild(c);
+    return loo;
+  }
+}
+
+ifNode ifSt() :
+{
+  ifNode iff = new ifNode();
+  conditionNode c;
+  blockNode b;
+}
+{
+  < IF > < OPEN > c = cond()  /* complex condition here*/< CLOSE > "{" b = block() "}"
+  {
+    iff.addChild(c);
+    iff.addChild(b);
+    return iff;
+  }
+}
+
+conditionNode cond() :
+{
+  conditionNode c = new conditionNode();
+  Token t1, t2, t3;
+  valueNode s1, s2, s3;
+}
+{
+  < OPEN >
+  (
+    t1 = < COMPAREOP > { s1 = new stringNode(t1.image); c.addChild(s1);}
+  )
+  (
+    (t2 = < INT > { s2 = new intNode(t2.image); c.addChild(s2);})
+    |
+    (t2 = < VAR > { s2 = new varNode(t2.image); c.addChild(s2);})
+    |
+    (t2 = < STR > { s2 = new stringNode(t2.image); c.addChild(s2);})
+    |
+    (t2 = < BOOL > { s2 = new boolNode(t2.image); c.addChild(s2);})
+  )
+  (
+    (t3 = < INT > { s3 = new intNode(t3.image); c.addChild(s3);})
+    |
+    (t3 = < VAR > { s3 = new varNode(t3.image); c.addChild(s3);})
+    |
+    (t3 = < STR > { s3 = new stringNode(t3.image); c.addChild(s3);})
+    |
+    (t3 = < BOOL > { s3 = new boolNode(t3.image); c.addChild(s3);})
+  )
+  < CLOSE >
+  {
+    return c;
+  }
+}
+
+printNode print() :
+{
+  printNode p = new printNode();
+  Token t1, t2;
+  valueNode s1, s2;
+}
+{
+  < PRINT >
+  (
+    (t1 = < INT > { s1 = new intNode(t1.image); p.addChild(s1);})
+    |
+    (t1 = < VAR > { s1 = new varNode(t1.image); p.addChild(s1);})
+    |
+    (t1 = < STR > { s1 = new stringNode(t1.image); p.addChild(s1);})
+    |
+    (t1 = < BOOL > { s1 = new boolNode(t1.image); p.addChild(s1);})
+  )
+  (
+    ","
+    (
+	    (t2 = < INT > { s2 = new intNode(t2.image); p.addChild(s2);})
+	    |
+	    (t2 = < VAR > { s2 = new varNode(t2.image); p.addChild(s2);})
+	    |
+	    (t2 = < STR > { s2 = new stringNode(t2.image); p.addChild(s2);})
+	    |
+	    (t2 = < BOOL > { s2 = new boolNode(t2.image); p.addChild(s2);})
+  	)
+  )*
+  {
+    return p;
+  }
+}
+
+assignNode assign() :
+{
+  assignNode ass = new assignNode();
+  Token t1, t2;
+  valueNode s1, s2;
+}
+{
+    < DEF > t1 = < VAR > {s1 = new stringNode(t1.image);}
+  (
+    (t2 = < INT > {s2 = new intNode(t2.image);})
+  |
+    (t2 = < STR >{s2 = new stringNode(t2.image);})
+  |
+    (t2 = < BOOL >{s2 = new boolNode(t2.image);})
+  |
+    (t2 = < VAR >{s2 = new varNode(t2.image);})
+  )
+  {
+    ass.addChild(s1);
+    ass.addChild(s2);
+    return ass;
+  }
+}
+
+
+modNode modification() :
+{
+  modNode m = new modNode();
+  Token t1, t2, t3;
+  valueNode s1, s2, s3;
+}
+{
+  t2 = < MATHOP > t1 = < VAR > t3 = < INT >
+  {
+    s1 = new stringNode(t1.image);
+    s2 = new stringNode(t2.image);
+    s3 = new intNode(t3.image);
+    m.addChild(s1);
+    m.addChild(s2);
+    m.addChild(s3);
+    return m;
+  }
+}
+
+switchNode switchSt() :
+{
+  switchNode sw = new switchNode();
+  Token t1, t2;
+  valueNode s1, s2;
+  miniSwitchNode swBlock;
+  blockNode b, defaultBlock;
+}
+{
+  < CASE >
+  (    t1 = < VAR > {s1 = new varNode(t1.image);}
+  )
+  (
+    (
+      (t2 = < INT > { s2 = new intNode(t2.image); })
+      |
+      (t2 = < STR > { s2 = new stringNode(t2.image); })
+      |
+      (t2 = < BOOL > { s2 = new boolNode(t2.image); })
+    )
+    b = block()
+    {
+      swBlock = new miniSwitchNode(s1); //Variable we are matching
+      swBlock.addChild(s2); //value of miniBlock to be matched
+      swBlock.addChild(b); //behavior of miniBlock
+      sw.addChild(swBlock); //add miniBlock to switch statement
+    }
+  )+
+  (
+    defaultBlock = block()
+    {
+      sw.addChild(defaultBlock);
+    }
+  )?
+  {
+    return sw;
+  }
+}

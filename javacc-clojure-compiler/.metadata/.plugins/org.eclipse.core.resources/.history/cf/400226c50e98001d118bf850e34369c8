@@ -1,0 +1,32 @@
+package nodes;
+
+public class conditionNode extends valueNode{
+
+	private String  op;
+
+	public conditionNode(String op) { this.op=op;}
+
+	@Override
+	public Object execute() {
+		
+//		Why .toString()???????? I added it to shut the error up, doesn't make sense
+		String op = children.get(0).execute().toString();
+		int v1=(int)assignNode.variables.get(varName);
+		int v2=(int)children.get(1).execute();
+		
+		if(op.equals("=")) 
+			return v1 == v2;
+		if(op.equals("not=")) 
+			return v1 != v2;
+		else if(op.equals(">")) 
+			return v1 > v2;
+		else if(op.equals("<")) 
+			return v1 < v2;
+		else if(op.equals(">=")) 
+			return v1 >= v2;
+		else if(op.equals("<=")) 
+			return v1 <= v2;
+		else
+			return null;
+	}
+}

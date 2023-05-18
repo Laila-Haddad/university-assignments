@@ -1,0 +1,39 @@
+package nodes;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class assignNode extends treeNode{
+
+	public assignNode() {}
+	
+	@Override
+	public Object execute() {
+
+		String varName = (String)children.get(0).execute();
+		Object varValue = children.get(1).execute();
+		
+		if (varValue.toString().equals("read-line")) {
+			System.out.print("Please enter a value for " + varName + ": ");
+			Scanner input= new Scanner(System.in);
+			String in = input.nextLine();
+			
+			while (in == null) {
+				System.out.print("Please enter a value for " + varName + ": ");
+				in = input.nextLine();
+			}
+			
+			if (in.equals("true")) {
+				varNode.variables.put(varName,true);
+				return null;
+			} else if (in.equals("false")) {
+				varNode.variables.put(varName,false);
+				return null;
+			}
+		}
+
+
+		varNode.variables.put(varName,varValue);
+		return null;
+	}
+}

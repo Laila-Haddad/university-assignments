@@ -1,0 +1,23 @@
+package nodes;
+
+public class boolNode extends treeNode
+{
+	private String val;
+
+	public boolNode(String v)
+	{
+		this.val = v;
+	}
+	
+	public void setVal(String v)
+	{
+		this.val = v;
+	}
+	
+	public Object execute()
+	{
+	boolean res = Boolean.parseBoolean(this.val);
+	System.out.println("hi from boolNode" + res);
+	return res ;
+	}
+}

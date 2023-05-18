@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\NourH\Desktop\CD\ClojureCompiler\.metadata\.plugins\org.eclipse.jdt.core
+1216592754.index
+3936280572.index
+1865797976.index
