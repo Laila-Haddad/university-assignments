@@ -20,5 +20,5 @@ An in-depth analysis of an airline ticket reservation system. includs UML class,
 ## Theme Park Simulation
 A theme park simulation made with C++ using openGL libraries. 
 ### Links
-- : [Theme Park Simulation code](https://github.com/Laila-Haddad/university-assignments/tree/main/opengl-theme-park "Theme Park Simulation code")
+- Theme Park Simulation code: [Theme Park Simulation code](https://github.com/Laila-Haddad/university-assignments/tree/main/opengl-theme-park "Theme Park Simulation code")
 
